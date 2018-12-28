@@ -1,6 +1,5 @@
 package br.com.codeone.minhasreceitas.features.start.activity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
 import br.com.codeone.minhasreceitas.R
@@ -11,7 +10,7 @@ import org.jetbrains.anko.startActivity
 
 class StartActivity : BaseActivity(), StartPresenter.ViewCallback {
 
-    private val presenter by lazy { StartPresenter(this)}
+    private val presenter by lazy { StartPresenter(this) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

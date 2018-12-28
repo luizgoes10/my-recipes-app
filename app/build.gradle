@@ -22,6 +22,10 @@ android {
     }
 }
 
+androidExtensions {
+    experimental = true
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
@@ -41,4 +45,7 @@ dependencies {
 
     //ANKO
     implementation "org.jetbrains.anko:anko:0.10.5"
+
+    //azure
+    implementation 'com.microsoft.azure:azure-mobile-android:3.4.0'
 }
