@@ -11,7 +11,7 @@ import com.microsoft.windowsazure.mobileservices.table.TableOperationCallback
 
 class LoginActivity : BaseActivity(), LoginPresenter.ViewCallback {
 
-    private val presenter by lazy{ LoginPresenter(this) }
+    private val presenter by lazy { LoginPresenter(this) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
